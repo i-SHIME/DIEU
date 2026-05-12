@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kibeho tss</title>
+    <link rel="stylesheet" type="text/css" href="style.css">i
+    <style>
+        body{
+            background-color: white;
+        }
+        .login-container { border: 1px solid #ccc; padding: 20px; border-radius: 8px; width: 300px;margin-top:-600px ;margin-left: 500px; }
+        input { width: 100%; margin: 10px 0; padding: 8px; box-sizing: border-box; }
+        button { width: 60%; padding: 10px; background-color: #007bff; color: white; border: none; cursor: pointer; }
+        #error-msg { color: black; font-size: 0.8em; }
+    </style>
+</head>
+<body>
+<h1 class="bounce-title">WELCOME TO KIBEHO TECHINICAL SECONDARY SCHOOL</h1>
+  <h1 style="margin-left: 400px;margin-top:-30px;">Worker registration form</h3>
+  <div id="l1">
+  <a href="Home.html">Home</a><br><br>
+  <a href="about.html">About us</a><br><br><br>
+  <a href="academ.html">Academics</a><br><br><br>
+  <a href="services.html">Services</a><br><br><br>
+  <a href="">Admissions</a><br><br><br>
+  <a href="galley.html">Galleys</a><br><br><br>
+  <a href="">Contact us</a><br><br>
+
+</div>
+<div class="login-container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="number" name="phonenumber" placeholder="your phonenumber">
+    <input type="password" id="password" placeholder="Password" required>
+    <p id="error-msg"></p>
+    <button onclick="validateAndLogin()">Login</button>
+    <input type="reset" name="back">
+</div>
+
+<script>
+    function validateAndLogin() {
+        const passValue = document.getElementById('password').value;
+        const userValue = document.getElementById('username').value;
+        const errorDisplay = document.getElementById('error-msg');
+        if (passValue.length > 3 && userValue.trim() !== "") {
+            window.location.href = "contact.html"; 
+        } else { 
+            errorDisplay.innerText = "Password must be longer than 3 characters.";
+        }
+    }
+</script>
+
+</body>
+</html>
