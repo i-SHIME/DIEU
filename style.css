@@ -48,6 +48,9 @@
 	padding: 10px;
 	text-align: center;
 }
+.container{
+	margin-top:200px;
+	margin-left:340px;
 .cont{
 	background-color: skyblue;
 	border-style: ridge;
@@ -55,8 +58,6 @@
 	border-radius: 20px;
 	padding: 20px;
 	width: 800px;
-	margin-top:200px;
-	margin-left:400px;
 }
 @keyframes bounce{
 	0%,20%,50%,80%,100%{
