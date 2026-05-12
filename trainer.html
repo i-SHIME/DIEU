@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>kibeho tss</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1 class="bounce-title">WELCOME TO KIBEHO TECHINICAL SECONDARY SCHOOL</h1>
+  <h1 style="margin-left: 400px;margin-top:-80px;">Trainer registration form</h3>
+  <div id="l1">
+  <a href="Home.html">Home</a><br><br>
+  <a href="about.html">About us</a><br><br><br>
+  <a href="academ.html">Academics</a><br><br><br>
+  <a href="services.html">Services</a><br><br><br>
+  <a href="">Admissions</a><br><br><br>
+  <a href="galley.html">Galleys</a><br><br><br>
+  <a href="">Contact us</a><br><br>
+
+</div>
+<div class="l2">
+    <h2>complete login</h2>
+    trainername:<input type="text" id="username" placeholder="izina ryawe" required><br><br>
+    email:<input type="email" id="email" placeholder="email ukoresha" required><br><br>
+
+    password:<input type="password" id="password" placeholder="shyiramo Password" required><br>
+    <p id="error-msg"></p>
+    <button onclick="validateAndLogin()">Login</button>
+    <button onclick="validateAndback()"> Back</button>
+</div>
+  <script>
+      function validateAndLogin() {
+        const passValue = document.getElementById('password').value;
+        const userValue = document.getElementById('username').value;
+        const errorDisplay = document.getElementById('error-msg');
+        if (passValue.length > 3 && userValue.trim() !== "") {
+            window.location.href = "home.html"; 
+        } else { 
+            errorDisplay.innerText = "Password must contain at least 3 characters.";
+        }
+    }
+  </script>
+</div>
+<section class="guide">
+        <h2>Application Guide</h2>
+
+        <div class="steps">
+            <div class="step">
+                <span>1</span>
+                <h4>Fill the Form</h4>
+                <p>Provide accurate personal and contact details.</p>
+            </div>
+
+            <div class="step">
+                <span>2</span>
+                <h4>Attach Documents</h4>
+                <p>Include required documents if necessary.</p>
+            </div>
+
+            <div class="step">
+                <span>3</span>
+                <h4>Submit Request</h4>
+                <p>Click login and then continue .</p>
+            </div>
+
+            <div class="step">
+                <span>4</span>
+                <h4>Follow Up</h4>
+                <p>We will respond within 24–24 hours.</p>
+            </div>
+        </div>
+    </section>
+
+<div class="center">
+  <center><footer>&copy;copyright:kibeho tss</footer></center>
+</div>
+</body>
+</html>
+
+
+  
