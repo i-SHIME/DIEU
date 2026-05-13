@@ -55,7 +55,7 @@
 	border-radius: 20px;
 	padding: 20px;
 	width: 800px;
-	margin-top:-250px;
+	margin-top:-450px;
 	margin-left:400px;
 }
 @keyframes bounce{
@@ -167,7 +167,7 @@
 			height: 400px;
 			width: 600px;
 			font-size: 30px;
-			padding :40px;
+			padding:40px;
 			white-space:30px ;
 
 
